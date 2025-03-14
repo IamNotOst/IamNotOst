@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: linear-gradient(-45deg, #8e2de2, #4a00e0, #ff8e53, #bf360c);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.avatar-container {
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(to right, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000, #ff0000);
+    background-size: 800% 100%;
+    animation: border-gradient 20s linear infinite;
+    transition: all 0.3s ease;
+}
+
+@keyframes border-gradient {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 400% 0%;
+    }
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.avatar-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+.nickname {
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.id {
+    font-size: 1.2em;
+    margin-top: 0;
+    text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.cards-container {
+    display: flex;  /* Use flexbox for horizontal layout */
+    justify-content: center; /* Space items evenly */
+    margin-top: 20px;
+    width: 90%; /* Adjust as needed */
+    max-width: 900px; /* Maximum width for the cards */
+}
+
+.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Black glow */
+    margin: 0 10px;  /* Space cards horizontally */
+    padding: 10px;
+    width: 120px;  /* Reduced width */
+    height: 160px; /* Reduced height */
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;       /* Use flexbox for vertical alignment within the card */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;  /* Center items horizontally */
+    transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.card-image {
+    width: 60px; /* Reduced image size */
+    height: 60px; /* Reduced image size */
+    border-radius: 10px;
+    object-fit: cover;
+    margin-bottom: 8px; /* Reduced margin */
+}
+
+.card-text {
+    font-size: 0.9em; /* Reduced font size */
+    margin: auto 0 0; /* Push text to the bottom */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8em;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+}
