@@ -92,7 +92,7 @@ body {
     margin: 0 10px;  /* Space cards horizontally */
     padding: 10px;
     width: 120px;  /* Reduced width */
-    height: 160px; /* Reduced height */
+    height: 150px; /* Reduced height */
     text-align: center;
     text-decoration: none;
     color: black;
@@ -107,8 +107,8 @@ body {
 }
 
 .card-image {
-    width: 60px; /* Reduced image size */
-    height: 60px; /* Reduced image size */
+    width: 70px; /* Reduced image size */
+    height: 70px; /* Reduced image size */
     border-radius: 10px;
     object-fit: cover;
     margin-bottom: 8px; /* Reduced margin */
